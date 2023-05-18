@@ -10,3 +10,16 @@ Gunicorn 又稱綠色獨角獸(源於icon)是Python Web服務器網關接口HTTP
 ```
 sudo pip install gunicorn
 ```
+
+## 範例程式
+程式很簡單一樣使用 Python Flask 建立一個很簡單的 API 並監聽 80PORT。
+```
+# run.py
+from flask import Flask
+app=Flask(__name__)
+@app.route('/')
+def hello():
+    return 'hello !'
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=80)
+```
