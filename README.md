@@ -7,5 +7,6 @@
 Gunicorn 又稱綠色獨角獸(源於icon)是Python Web服務器網關接口HTTP服務器。Gunicorn 服務器與許多Web框架廣泛兼容，並且實現簡單，佔用服務器資源少且速度相當快。此外我們也能選擇使用同步或非同步機制部署你的程式，除此之外也能設定 cpu 的 worker 數量或是 thread 處理。本文就不先講得太複雜，下篇文章我們再來探討這部分設置，本篇的重點在於快速部署一個背景執行的服務。
 
 安裝方法很簡單使用 pip 來安裝 Gunicorn 套件。
-
+```
 sudo pip install gunicorn
+```
